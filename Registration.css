@@ -1,0 +1,58 @@
+form{
+    width: 500px;
+    height: 500px;
+    background-color: #d6d6d6;
+    border-radius: 50px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    backdrop-filter: blur(599999999999999999999999px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.9);
+}
+input, select{
+    margin-bottom: 10px;
+    background-color: white;
+    height: 30px;
+    border-radius: 7px;
+    color: black;
+}
+label{
+    text-align: left;
+}
+input[type='button'], input[type='submit']{
+    background-color: #3700ff;
+    width: 60%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+input[type='button']:hover{
+    background-color: #18006f;
+}
+.otherForm{
+    background-color: transparent;
+    color: blue;
+}
+#back, #back2{
+    width: 40px;
+    margin-left: 0;
+    background-color: transparent;
+    border: 1px solid #3700ff;
+    color: #3700ff;
+    font-weight: bold;
+    font-size: 24px;
+}
+#back:hover, #back2:hover{
+    background-color: #3700ff;
+    color: white;
+}
+@media(max-width: 580px){
+    form{
+        width: 75%;
+    }
+    h1{
+        font-size: 2.2em;
+    }
+}

@@ -1,0 +1,142 @@
+/* Основные стили для админ-панели */
+.admin-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+.admin-panel h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Форма для добавления/редактирования товаров */
+.admin-panel form {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-panel form input {
+    width: 96%;
+    padding: 10px;
+    background-color: #464646;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+     color: white;
+}
+
+.admin-panel form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.admin-panel form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.admin-panel form button:hover {
+    background-color: #0056b3;
+}
+
+/* Список товаров */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Карточка товара */
+.product-item {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Кнопки управления */
+.product-item button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:first-of-type {
+    background-color: #28a745;
+    color: white;
+}
+
+.product-item button:first-of-type:hover {
+    background-color: #218838;
+}
+
+.product-item button:last-of-type {
+    background-color: #dc3545;
+    color: white;
+}
+
+.product-item button:last-of-type:hover {
+    background-color: #c82333;
+}
+#previous{
+    position: relative;
+    left: -45%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .admin-panel form input,
+    .admin-panel form button {
+        font-size: 14px;
+    }
+    #previous{
+        left:0;
+    }
+}
+@media(max-width: 580px){
+    .admin-panel form{
+        width: 84%;
+        align-items: center;
+    }
+}

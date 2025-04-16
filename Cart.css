@@ -1,0 +1,147 @@
+.cart {
+    background-color: #333;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px;
+    color: black;
+    margin-top: 70px;
+}
+
+.cart .imagee {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    text-align: left;
+    margin: 5px;
+}
+
+.cartitem {
+    background-color: #464646;
+    color: white;
+    width: 475px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    width: 25%;
+    position: relative;
+    top: -60px;
+}
+
+.basket {
+    position: relative;
+    left: -90px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.buy {
+    position: relative;
+    left: 55px;
+}
+
+.basketImg {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.price {
+    position: relative;
+    top: -40px;
+    color: red;
+    font-weight: bold;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.close {
+    width: 95%;
+    color: #aaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#quantity-div {
+    position: relative;
+    top: 58%;
+    left: -48%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-div button {
+    padding: 10px; /* Уменьшаем отступы */
+    text-align: center;
+    font-size: 16px; /* Указываем размер шрифта */
+    border-radius: 8px; /* Закругляем углы */
+    border: 1px solid #ccc; /* Добавляем границу */
+    background-color: #f8f9fa; /* Цвет фона */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-div button:hover {
+    background-color: #e9ecef; /* Цвет фона при наведении */
+}
+
+.quantity {
+    margin: 10px;
+}
+@media(max-width: 580px){
+    .cart{
+        width: 110%;
+    }
+    .cartitem{
+        flex-direction: column;
+        width: 90%;
+    }
+    .name{
+        top: 0;
+        text-align: center;
+    }
+    .basket{
+        left: 0;
+    }
+    .buy{
+        left: 0;
+    }
+    .price{
+        top: 0;
+    }
+    #quantity-div{
+        top: 0;
+        left: 0;
+    }
+}
